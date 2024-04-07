@@ -15,6 +15,7 @@ class DetailsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailsBinding
     lateinit var linkUrl :String
     lateinit var   textViewUrl:TextView
+    lateinit var textDes: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailsBinding.inflate(layoutInflater)
@@ -23,10 +24,11 @@ class DetailsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_details)
         val imageView= findViewById<ImageView>(R.id.imageView)
          textViewUrl = findViewById<TextView>(R.id.tv_url)
+        textDes =findViewById<TextView>(R.id.tv_description)
         val repository = intent.getParcelableExtra<Items>("repository")
         if (repository != null) {
             linkUrl= repository.cloneUrl.toString()
-            binding.tvDescription.text=repository.description
+            textDes.text=repository.description
             textViewUrl.text=repository.cloneUrl
             // Use repository data to populate UI or perform other actions
             Glide.with(this)

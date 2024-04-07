@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.demopagination.OnRepositoryClickListener
 import com.example.demopagination.R
 import com.example.demopagination.adapter.RepositoryAdapter
+import com.example.demopagination.databinding.ActivityMainBinding
 import com.example.demopagination.mvvm.ViewModelFactory
 import com.example.demopagination.model.Items
 import com.example.demopagination.mvvm.MainActivityViewModel
@@ -26,16 +27,20 @@ class MainActivity : AppCompatActivity(), OnRepositoryClickListener {
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: RepositoryAdapter
     private lateinit var viewModel: MainActivityViewModel
-
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        recyclerView = findViewById(R.id.recyclerView)
-        val editTextSearch = findViewById<EditText>(R.id.inputSearch)
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+        //setContentView(R.layout.activity_main)
+
+     //   recyclerView = findViewById(R.id.recyclerView)
+       // val editTextSearch = findViewById<EditText>(R.id.inputSearch)
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = RepositoryAdapter(emptyList(),this)
-        recyclerView.adapter = adapter
+        binding.recyclerView.adapter = adapter
         // Initialize Room Database and DataDao
         val db = AppDatabase.getInstance(applicationContext)
         val dataDao = db.dataDao()
@@ -67,15 +72,20 @@ if (viewModel.isNetworkConnected(this)){
 
 
 
-        editTextSearch.addTextChangedListener(object : TextWatcher {
+        binding.inputSearch.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 // Not needed
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 // Filter your data based on the search query
-                val searchText = s.toString().trim()
-                viewModel.searchRepositories(searchText, 10)
+                if (s != null) {
+                    if (s.length>=1) {
+                        val searchText = s.toString().trim()
+                        viewModel.searchRepositories(searchText, 10)
+                    }
+                }
+                adapter.notifyDataSetChanged()
             }
 
             override fun afterTextChanged(s: Editable?) {
@@ -87,7 +97,7 @@ if (viewModel.isNetworkConnected(this)){
     }
 
     override fun onRepositoryClick(repository: Items) {
-        val intent = Intent(this, DetailsActivity::class.java)
+        val intent = Intent(this, DetailsActivityCompose::class.java)
         intent.putExtra("repository", repository)
         startActivity(intent)
     }
