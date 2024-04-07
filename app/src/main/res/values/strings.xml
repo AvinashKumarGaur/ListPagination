@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DemoPagination</string>
+    <string name="txt_search_product">Search Product</string>
+</resources>

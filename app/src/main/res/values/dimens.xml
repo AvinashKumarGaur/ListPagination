@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">@dimen/_16sdp</dimen>
+    <dimen name="activity_vertical_margin">@dimen/_17sdp</dimen>
+    <dimen name="button_height_normal">@dimen/_40sdp</dimen>
+    <dimen name="button_height_small">@dimen/_32sdp</dimen>
+    <dimen name="more_care_size">@dimen/_100sdp</dimen>
+    <dimen name="toolbar_icon_size_xsmall">@dimen/_20sdp</dimen>
+    <dimen name="loader_icon_width">@dimen/_80sdp</dimen>
+    <dimen name="loader_icon_height">@dimen/_90sdp</dimen>
+    <dimen name="toolbar_icon_size_small">@dimen/_24sdp</dimen>
+    <dimen name="toolbar_icon_size">@dimen/_32sdp</dimen>
+    <dimen name="toolbar_icon_size_large">@dimen/_36sdp</dimen>
+    <dimen name="toolbar_icon_size_xlarge">@dimen/_40sdp</dimen>
+    <dimen name="toolbar_icon_size_xxlarge">@dimen/_44sdp</dimen>
+    <dimen name="toolbar_icon_size_huge">@dimen/_48sdp</dimen>
+    <!--Margins & Paddings-->
+    <dimen name="spacing_xxsmall">@dimen/_2sdp</dimen>
+    <dimen name="spacing_xsmall">@dimen/_4sdp</dimen>
+    <dimen name="spacing_small">@dimen/_8sdp</dimen>
+    <dimen name="spacing_medium">@dimen/_12sdp</dimen>
+    <dimen name="spacing_large">@dimen/_16sdp</dimen>
+    <dimen name="spacing_xlarge">@dimen/_20sdp</dimen>
+    <dimen name="spacing_huge">@dimen/_24sdp</dimen>
+    <dimen name="spacing_xhuge">@dimen/_32sdp</dimen>
+    <dimen name="spacing_xhuge1">@dimen/_36sdp</dimen>
+    <dimen name="spacing_xxhuge">@dimen/_40sdp</dimen>
+    <dimen name="spacing_xxxhuge">@dimen/_48sdp</dimen>
+    <dimen name="recycler_view_item_width">60dp</dimen>
+    <dimen name="spacing_xxxxhuge">@dimen/_56sdp</dimen>
+
+    <!--Text Sizes-->
+
+
+
+    <dimen name="corner_radius_xlarge">@dimen/_28sdp</dimen>
+    <dimen name="corner_radius_large">@dimen/_20sdp</dimen>
+    <dimen name="corner_radius">@dimen/_12sdp</dimen>
+    <dimen name="corner_radius_medium">@dimen/_8sdp</dimen>
+    <dimen name="corner_radius_small">@dimen/_4sdp</dimen>
+
+    <!--PinView dimens-->
+    <dimen name="pv_pin_view_item_size">@dimen/_48sdp</dimen>
+    <dimen name="pv_pin_view_item_spacing">@dimen/_4sdp</dimen>
+    <dimen name="pv_pin_view_item_line_width">@dimen/_2sdp</dimen>
+    <dimen name="pv_pin_view_cursor_width">@dimen/_2sdp</dimen>
+    <!--PinView dimens-->
+
+
+
+
+    <dimen name="dimen_2_dp">2dp</dimen>
+    <dimen name="dimen_5_dp">5dp</dimen>
+    <dimen name="dimen_8_dp">8dp</dimen>
+    <dimen name="dimen_10_dp">10dp</dimen>
+    <dimen name="dimen_standard">16dp</dimen>
+    <dimen name="dimen_20_dp">20dp</dimen>
+    <dimen name="dimen_24_dp">24dp</dimen>
+    <dimen name="dimen_30_dp">30dp</dimen>
+    <dimen name="dimen_50_dp">50dp</dimen>
+    <dimen name="dimen_55_dp">55dp</dimen>
+    <dimen name="dimen_80_dp">80dp</dimen>
+    <dimen name="dimen_100_dp">100dp</dimen>
+    <dimen name="dimen_120_dp">120dp</dimen>
+
+    <dimen name="login_button_width">200dp</dimen>
+    <dimen name="login_button_height">40dp</dimen>
+    <dimen name="view_radius">8dp</dimen>
+    <dimen name="dimen_border_line">1dp</dimen>
+    <dimen name="dimen_social_width">135dp</dimen>
+    <dimen name="dimen_social_height">40dp</dimen>
+    <dimen name="input_margin_top">24dp</dimen>
+    <dimen name="input_margin_top_large">40dp</dimen>
+    <dimen name="dimen_40_dp">40dp</dimen>
+    <dimen name="dimen_23_dp">23dp</dimen>
+    <dimen name="dimen_32_dp">32dp</dimen>
+    <dimen name="dimen_14_dp">14dp</dimen>
+    <dimen name="dimen_99_dp">99dp</dimen>
+    <dimen name="dimen_330_dp">330dp</dimen>
+    <dimen name="dimen_236_dp">236dp</dimen>
+    <dimen name="dimen_36_dp">36dp</dimen>
+    <dimen name="dimen_170_dp">170dp</dimen>
+    <dimen name="dimen_134_dp">134dp</dimen>
+    <dimen name="dimen_15_dp">15dp</dimen>
+    <dimen name="dimen_129_dp">129dp</dimen>
+    <dimen name="dimen_16_sp">16sp</dimen>
+    <dimen name="dimen_16_dp">16dp</dimen>
+    <dimen name="dimen_60_dp">60dp</dimen>
+    <dimen name="dimen_70_dp">70dp</dimen>
+    <dimen name="dimen_15_sp">15sp</dimen>
+    <dimen name="dimen_12_sp">12sp</dimen>
+    <dimen name="dimen_13_sp">13sp</dimen>
+    <dimen name="dimen_90_dp">90dp</dimen>
+    <dimen name="dimen_12_dp">12dp</dimen>
+    <dimen name="dimen_21_dp">21dp</dimen>
+    <dimen name="dimen_22_dp">22dp</dimen>
+    <dimen name="dimen_18_sp">18sp</dimen>
+    <dimen name="dimen_20_sp">20sp</dimen>
+    <dimen name="dimen_14_sp">14sp</dimen>
+    <dimen name="dimen_18_dp">18dp</dimen>
+    <dimen name="dimen_3_dp">3dp</dimen>
+    <dimen name="dimen_200_dp">200dp</dimen>
+    <dimen name="dimen_2_5_dp">2.5dp</dimen>
+    <dimen name="dimen_10_sp">10sp</dimen>
+    <dimen name="dimen_350_dp">350dp</dimen>
+    <dimen name="dimen_340_dp">340dp</dimen>
+    <dimen name="dimen_380_dp">380dp</dimen>
+    <dimen name="dimen_550_dp">550dp</dimen>
+    <dimen name="dimen_180_dp">180dp</dimen>
+    <dimen name="dimen_4_dp">4dp</dimen>
+    <dimen name="dimen_8_sp">8sp</dimen>
+    <dimen name="dimen_400_dp">400dp</dimen>
+    <dimen name="dimen_150_dp">150dp</dimen>
+    <dimen name="dimen_85_dp">85dp</dimen>
+    <dimen name="dimen_34_dp">34dp</dimen>
+    <dimen name="dimen_25_dp">25dp</dimen>
+    <dimen name="dimen_28_dp">28dp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+
+    //selector view colors
+    <dimen name="sv_rect_corner_touch_threshold">30dp</dimen>
+    <dimen name="sv_rect_min_size">40dp</dimen>
+    <dimen name="sv_rect_corner_touch_area_line_length">10dp</dimen>
+    <dimen name="sv_grid_stoke_width">1dp</dimen>
+    <dimen name="sv_frame_stoke_width">1dp</dimen>
+    <dimen name="sv_corner_radius">5dp</dimen>
+
+    //recyclerView
+    <dimen name="sticky_header_height">48dp</dimen>
+
+
+
+</resources>
