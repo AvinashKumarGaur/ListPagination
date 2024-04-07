@@ -1,10 +1,13 @@
-package com.example.demopagination
+package com.example.demopagination.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.demopagination.OnRepositoryClickListener
+import com.example.demopagination.R
+import com.example.demopagination.model.Items
 
 
 class RepositoryAdapter(var repositories: List<Items>, private val listener: OnRepositoryClickListener) :

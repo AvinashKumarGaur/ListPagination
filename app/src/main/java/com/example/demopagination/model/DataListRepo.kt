@@ -1,4 +1,4 @@
-package com.example.demopagination
+package com.example.demopagination.model
 
 import com.google.gson.annotations.SerializedName
 data class DataListRepo(

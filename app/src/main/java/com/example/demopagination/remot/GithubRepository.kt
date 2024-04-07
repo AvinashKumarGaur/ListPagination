@@ -1,7 +1,8 @@
-package com.example.demopagination
+package com.example.demopagination.remot
 
 // GithubRepository.kt
 
+import com.example.demopagination.model.Items
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

@@ -1,7 +1,8 @@
-package com.example.demopagination
+package com.example.demopagination.mvvm
 
 import android.view.View
 import androidx.databinding.ObservableInt
+import com.example.demopagination.R
 
 
 class ProgressVM {

@@ -1,4 +1,4 @@
-package com.example.demopagination
+package com.example.demopagination.model
 
 import com.google.gson.annotations.SerializedName
 import android.os.Parcelable
@@ -7,7 +7,6 @@ import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
 import com.example.demopagination.room.LicenseTypeConverter
 import com.example.demopagination.room.OwnerTypeConverter
-import com.google.gson.Gson
 import kotlinx.parcelize.Parcelize
 @TypeConverters(OwnerTypeConverter::class, LicenseTypeConverter::class)
 @Entity(tableName = "Items")

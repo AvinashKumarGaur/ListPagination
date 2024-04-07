@@ -1,10 +1,8 @@
-package com.example.demopagination
+package com.example.demopagination.remot
 
-import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
-import retrofit2.http.Path
 import retrofit2.http.Query
 
 // GithubService.kt

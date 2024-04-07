@@ -1,4 +1,4 @@
-package com.example.demopagination
+package com.example.demopagination.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
+import com.example.demopagination.model.Items
+import com.example.demopagination.R
 import com.example.demopagination.databinding.ActivityDetailsBinding
 
 

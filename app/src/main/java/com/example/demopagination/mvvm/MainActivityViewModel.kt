@@ -1,22 +1,22 @@
-package com.example.demopagination
+package com.example.demopagination.mvvm
 
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
-import android.util.Log
 import android.view.View
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.demopagination.model.Items
+import com.example.demopagination.remot.GithubRepository
 import com.example.demopagination.room.dao.DataRepository
-import com.google.gson.Gson
 
 import kotlinx.coroutines.launch
 
 // GithubViewModel.kt
-class GithubViewModel(private val repository: GithubRepository,private val userRepository: DataRepository,private val context: Context ) : ViewModel() {
+class MainActivityViewModel(private val repository: GithubRepository, private val userRepository: DataRepository, private val context: Context ) : ViewModel() {
     private val _repositories = MutableLiveData<List<Items>>().apply { value = emptyList() }
     val progressVM = ProgressVM()
     val repositories: LiveData<List<Items>> = _repositories

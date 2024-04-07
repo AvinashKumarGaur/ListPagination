@@ -1,4 +1,4 @@
-package com.example.demopagination
+package com.example.demopagination.model
 
 import android.os.Parcelable
 import androidx.room.Entity

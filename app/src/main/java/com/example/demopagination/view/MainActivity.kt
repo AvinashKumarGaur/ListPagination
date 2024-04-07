@@ -1,4 +1,4 @@
-package com.example.demopagination
+package com.example.demopagination.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,15 +10,22 @@ import android.widget.EditText
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.demopagination.OnRepositoryClickListener
+import com.example.demopagination.R
+import com.example.demopagination.adapter.RepositoryAdapter
+import com.example.demopagination.mvvm.ViewModelFactory
+import com.example.demopagination.model.Items
+import com.example.demopagination.mvvm.MainActivityViewModel
+import com.example.demopagination.remot.GithubRepository
 import com.example.demopagination.room.AppDatabase
 import com.example.demopagination.room.dao.DataRepository
 
 
-class MainActivity : AppCompatActivity(), OnRepositoryClickListener{
+class MainActivity : AppCompatActivity(), OnRepositoryClickListener {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: RepositoryAdapter
-    private lateinit var viewModel: GithubViewModel
+    private lateinit var viewModel: MainActivityViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +45,7 @@ class MainActivity : AppCompatActivity(), OnRepositoryClickListener{
         val dataRepository = DataRepository(dataDao)
         val repository = GithubRepository() // Provide an instance of your repository here
         val viewModelFactory = ViewModelFactory(repository,dataRepository,this)
-        viewModel = ViewModelProvider(this, viewModelFactory).get(GithubViewModel::class.java)
+        viewModel = ViewModelProvider(this, viewModelFactory).get(MainActivityViewModel::class.java)
 if (viewModel.isNetworkConnected(this)){
     viewModel.repositories.observe(this) { repositories ->
         adapter.repositories = repositories

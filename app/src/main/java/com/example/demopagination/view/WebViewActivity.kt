@@ -1,12 +1,12 @@
-package com.example.demopagination
+package com.example.demopagination.view
 
 import android.os.Bundle
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 import android.annotation.SuppressLint
-import android.view.View
 import android.widget.ProgressBar
+import com.example.demopagination.R
 
 
 class WebViewActivity : AppCompatActivity() {
@@ -33,6 +33,7 @@ class WebViewActivity : AppCompatActivity() {
                 super.onPageFinished(view, url)
                 progressBar.visibility= ProgressBar.INVISIBLE
             }
+
         }
         webView.settings.javaScriptEnabled = true
         webView.loadUrl(url)
